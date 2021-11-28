@@ -7,7 +7,8 @@
         </router-link>
       </p>
       <p class="text-faded text-xsmall">
-        By <a href="#">Joseph Kerr</a>, {{ thread.publishedAt }}.
+        By <a href="#">Joseph Kerr</a>,
+        <AppDate :timestamp="thread.publishedAt"/>.
       </p>
     </div>
 
@@ -28,7 +29,10 @@
   </div>
 </template>
 <script>
+import App from '../App'
+import AppDate from './AppDate'
 export default {
+  components: {AppDate, App},
   props: {
     thread: {
       required: true,
