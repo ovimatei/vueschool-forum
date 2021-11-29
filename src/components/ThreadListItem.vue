@@ -30,9 +30,8 @@
 </template>
 <script>
 import App from '../App'
-import AppDate from './AppDate'
 export default {
-  components: {AppDate, App},
+  components: {App},
   props: {
     thread: {
       required: true,

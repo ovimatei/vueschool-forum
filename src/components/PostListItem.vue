@@ -20,11 +20,9 @@
 
 <script>
 import sourceData from '@/data'
-import AppDate from './AppDate'
 
 export default {
   name: 'PostListItem',
-  components: {AppDate},
   props: {
     post: {
       required: true,
