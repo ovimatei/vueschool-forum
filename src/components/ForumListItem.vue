@@ -13,9 +13,8 @@
       <p class="count">{{ threadsCount }}</p>
       {{ threadsCount === 1 ? 'thread' : 'threads' }}
     </div>
-
     <div class="last-thread">
-      <!-- TODO: implement later    -->
+      <!-- TODO: implement later -->
     </div>
   </div>
 </template>
