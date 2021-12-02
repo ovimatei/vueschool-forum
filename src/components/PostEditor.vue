@@ -42,6 +42,8 @@ export default {
       }
       this.text = ''
       this.$emit('save', {post})
+
+      this.$store.dispatch('createPost', post)
     }
   }
 }
